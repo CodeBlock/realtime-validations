@@ -17,6 +17,9 @@ module RealtimeValidations
       end
       model = retrieve_or_create_model args, params[:model]
       send_messages_to_model args, model, field
+      params.each do |key, value|
+        model.send "#{key}=", value if model.respond_to?("#{key}=")
+      end
       model_valid? model
       respond_to_validation retrieve_model_errors(model, field)
     end
