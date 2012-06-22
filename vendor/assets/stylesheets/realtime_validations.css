@@ -20,3 +20,11 @@ div.field-valid img {
   width: 24px;
   height: 24px;
 }
+
+input.valid-field {
+  border: 1px solid green;
+}
+
+input.invalid-field {
+  border: 1px solid red;
+}

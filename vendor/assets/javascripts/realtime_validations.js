@@ -78,13 +78,13 @@ var RealtimeValidations = {
                             + errors.join(', ') +
                           '</div>');
     $('#' + field.attr('id') + '_error').fadeIn('slow');
+    field.addClass('invalid-field');
+    field.removeClass('valid-field');
   },
 
   showValidSmoothly : function(field) {
-    field.parent().append('<div style="display: none;" id="' + field.attr('id') + '_valid" class="field-valid"> \
-                             <img src="/assets/valid_field.png"> \
-                           </div>');
-    $('#' + field.attr('id') + '_valid').fadeIn('slow');
+    field.addClass('valid-field');
+    field.removeClass('invalid-field');
   },
 
   // Public functions (meant to be overriden if necessary):
