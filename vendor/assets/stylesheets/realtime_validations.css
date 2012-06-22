@@ -1,6 +1,6 @@
 div.field-error {
   display: inline-block;
-  position: absolute;
+/*  position: absolute; */
   color: #ff0000;
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ div.field-error {
 
 div.field-valid {
   display: inline-block;
-  position: absolute;
+/*  position: absolute; */
   margin: 0;
   padding: 0;
   padding-left: 5px;
